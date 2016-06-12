@@ -413,7 +413,7 @@ gepub_doc_get_resource_mime (GepubDoc *doc, gchar *path)
 
     while (keys) {
         gres = ((GepubResource*)g_hash_table_lookup (doc->resources, keys->data));
-        if (!strcmp (gres->uri, path))
+        if (!strcmp (gres->uri, v))
             break;
         keys = keys->next;
     }
